@@ -1,4 +1,6 @@
 # NLW eSport  
+
+![preview](./.github/preview.png)
 >trilha Explore
 
 Projecto construido do evento Next level week da Rockerseat
