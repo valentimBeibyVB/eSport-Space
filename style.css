@@ -1,0 +1,128 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 160%;
+}
+body{
+    background-image: url(./asset/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+header{
+    text-align: center;
+    margin-top: 32px;
+}
+ header div{ 
+    background-image: linear-gradient(90deg , #9572fc 0%, #43e7ad 50.52%,  #e2d45c 100%);
+    border-radius: 50%;
+    width: 120px;
+    margin: auto;
+    /* display: flex; */ 
+    height: 120px;
+    padding: 4px;
+    transition: transform .3s;
+    animation: formtop .7s .7s backwards;
+ }
+ header div:hover{
+    transform: scale(1.1);
+ }
+header /*div*/ img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+   
+}
+ul{
+    list-style: none;
+}
+main{
+     max-width: 580px;
+     width: 90%;
+     margin: 32px auto;
+     display: grid;
+     gap:24px;
+}
+
+section{
+    color:white;
+    background-image: linear-gradient(90deg , #9572fc 0%, #43e7ad 50.52%,  #e2d45c 100%);
+    /* border-top: 5px solid  #43e7ad; */
+    border-radius: 10px;
+    padding-top: 5px;
+}
+section div{
+    background-color: #2a2634;
+    padding: 24px 32px 32px 32px;
+    border-radius: 8px;
+}
+section h2{
+    font-weight: 900;
+    letter-spacing: 0.47px;
+}
+section p{
+    letter-spacing: 0.18px;
+    color:#a1a1aa
+}
+section ul{
+    display: flex;
+    gap: 16px;
+    margin-top:26px;
+    flex-wrap: wrap;
+}
+section ul li{
+    transition: transform .3s;
+    animation: cards .7s .7s backwards; 
+}
+main section{
+    animation: cards .7s .7s backwards; 
+}
+section ul li:hover{
+    transform: scale(1.1);
+}
+.game_list img{
+    border-radius: 8px;
+    width: 90px;
+    height: 100%;
+    
+}
+.channel_list img{
+    border-radius: 50%;
+    width: 70px;
+    height: 100%;
+    border: 1px solid #443e54;
+}
+
+main section:nth-child(1){
+    animation-delay: .0s;
+} 
+main section:nth-child(2){
+    animation-delay:.3s
+}
+main section:nth-child(3){
+    animation-delay:.6s;
+}
+/* Animations */
+@keyframes formtop {
+    from{
+        opacity: 0;
+        transform: translatey(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translatey(0);
+
+    }
+}
+@keyframes cards{
+    from{
+        opacity: 0;
+        transform: translatey(20px)
+    }
+    to{
+        transform: translatey(0)
+    }
+}
